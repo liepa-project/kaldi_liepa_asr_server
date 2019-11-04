@@ -19,6 +19,12 @@ Recongition Server for Liepa project based on Liepa
 4. copy recogntion acoustic and grammar models to ```models``` 
 5. run ```sh start_server.sh```. This will start server on port 5050 by default
 6. test localy ```sh start_server.sh```
+7. test on Nao robot. 
+   1. make sure server is running. get server IP
+   2. change in ```python/LiepaAsrKaldi.py``` server ip: ```self.asrClient = KaldiClient('192.168.1.203', '5050', self.recognized_callback)``` 
+   3. copy to robot ```python/LiepaAsrKaldi.py``` through ssh file copying function
+   4. run ```python LiepaAsrKaldi.py``` on robot
+   5. use choregraphe project to test it: ```nao/choregraphe/liepa_asr_kaldi_helloworld```
 
 
 # Setup on Windows
