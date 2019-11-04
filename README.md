@@ -11,7 +11,7 @@ Recongition Server for Liepa project based on Liepa
    5. run ```extras/install_irstlm.sh```
    6. run ```make```
    7. go to ```../src/```
-   8. run ```./configure --shared```
+   8. run ```configure --shared```
    9. run ```make depend```
    10. run ```make -j```
 2. copy ```kaldi/src/online2bin/online2-tcp-nnet3-decode-faster``` to bin directory of this project
