@@ -10,14 +10,15 @@ Recongition Server for Liepa project based on Liepa
    4. I needed to install mkl by running ```extras/install_mkl.sh```
    5. run ```extras/install_irstlm.sh```
    6. run ```make```
-   7. go to ```../src/```
+   7. go to ```../src/``` 
    8. run ```configure --shared```
    9. run ```make depend```
    10. run ```make -j```
-2. copy ```kaldi/src/online2bin/online2-tcp-nnet3-decode-faster``` to bin directory of this project
-3. copy recogntion acoustic and grammar models to ```models``` 
-4. run ```sh start_server.sh```. This will start server on port 5050 by default
-5. test localy ```sh start_server.sh```
+4. clone this project near the kaldi project.  
+3. copy ```kaldi/src/online2bin/online2-tcp-nnet3-decode-faster``` to ```bin``` directory of this project
+4. copy recogntion acoustic and grammar models to ```models``` 
+5. run ```sh start_server.sh```. This will start server on port 5050 by default
+6. test localy ```sh start_server.sh```
 
 
 # Setup on Windows
